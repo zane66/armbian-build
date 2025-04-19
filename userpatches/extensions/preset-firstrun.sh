@@ -41,11 +41,14 @@ function post_family_tweaks__preset_configs() {
 	# Preset root password
 	echo "PRESET_ROOT_PASSWORD=armbian123" >> "${SDCARD}"/root/.not_logged_in_yet
 
+	echo "PRESET_USER_KEY=https://gist.githubusercontent.com/zane66/838de7a9fb4d044763491093811bb011/raw/00bc7f3dcc406689fc6046eebc7455d61665072b/ArmbianKey.pub" >> "${SDCARD}"/root/.not_logged_in_yet
 	# Preset username
 	echo "PRESET_USER_NAME=armbian" >> "${SDCARD}"/root/.not_logged_in_yet
 
 	# Preset user password
 	echo "PRESET_USER_PASSWORD=armbian123" >> "${SDCARD}"/root/.not_logged_in_yet
+
+	echo "PRESET_USER_KEY=https://gist.githubusercontent.com/zane66/838de7a9fb4d044763491093811bb011/raw/00bc7f3dcc406689fc6046eebc7455d61665072b/ArmbianKey.pub" >> "${SDCARD}"/root/.not_logged_in_yet
 
 	# Preset user default realname
 	echo "PRESET_DEFAULT_REALNAME=Armbian" >> "${SDCARD}"/root/.not_logged_in_yet
